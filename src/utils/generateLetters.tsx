@@ -1,8 +1,21 @@
-import feedback from "../assets/letter.png";
-import baloons from "../assets/baloons.png";
-import scooby from "../assets/Scoobydoo.jpeg";
+function importAll(r: any) {
+  let images: any = [];
 
-export const rewardImages = [scooby, baloons, feedback];
+  r.keys().map((item: any) => {
+    console.log(item, "i");
+
+    images.push(r(item));
+    // images[item.replace("./", "")] = r(item);
+  });
+  return images;
+}
+
+// @ts-ignore
+export const rewardImages = importAll(
+  require.context("../assets/", false, /.png/)
+);
+
+console.log(rewardImages[0], "rewardImages");
 
 const alpha = Array.from(Array(26)).map((e, i) => i + 65);
 export const alphabet = alpha.map((x) => String.fromCharCode(x));

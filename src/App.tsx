@@ -16,11 +16,16 @@ let AppText = getTranslation("pl");
 
 function App() {
   const [letter, setNextLetter] = useState(alphabet[getIndx]);
-  const [image, setNextImage] = useState(rewardImages[getIndx]);
+  const [image, setNextImage] = useState("");
   const [displayOk, setDisplayOk] = useState(false);
   const [lang, setLang] = useState({ eng: false, pl: true });
 
   useEffect(() => {
+    const getPic = rewardImages[getRandomNumber(0, rewardImages.length - 1)];
+    if (getPic.default) {
+      setNextImage(getPic.default);
+      console.log("initialImgSet", image);
+    }
     if (lang.eng) {
       AppText = getTranslation("eng");
     }
@@ -44,9 +49,11 @@ function App() {
   const handleClick = (
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ): void => {
-    setNextLetter(alphabet[getRandomNumber(0, alphabet.length-1)]);
-    setNextImage(rewardImages[getRandomNumber(0, rewardImages.length-1)]);
-    console.log(image, "-");
+    setNextLetter(alphabet[getRandomNumber(0, alphabet.length - 1)]);
+    const getPic = rewardImages[getRandomNumber(0, rewardImages.length - 1)];
+    if (getPic.default) {
+      setNextImage(getPic.default);
+    }
     setDisplayOk(false);
   };
 

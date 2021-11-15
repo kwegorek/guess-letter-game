@@ -3,7 +3,7 @@ export const AppTextPL = {
   next: "Graj dalej",
   submit: "Sprawdź",
   feedback_ok: "Świetnie!",
-  choose_find_letter: "Znajdź litere",
+  choose_find_letter: "Znajdź literę",
   letter: "Litera",
 };
 
@@ -41,7 +41,7 @@ export const getTranslation = (lang: string) => {
       next: "Graj dalej",
       submit: "Sprawdź",
       feedback_ok: "Świetnie!",
-      choose_find_letter: "Znajdź litere",
+      choose_find_letter: "Znajdź literę",
       letter: "Litera",
     };
   }

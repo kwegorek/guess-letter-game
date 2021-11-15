@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/guess-letter-game/static/css/main.a727405a.chunk.css",
+    "main.js": "/guess-letter-game/static/js/main.a1366019.chunk.js",
+    "main.js.map": "/guess-letter-game/static/js/main.a1366019.chunk.js.map",
+    "runtime-main.js": "/guess-letter-game/static/js/runtime-main.4f514220.js",
+    "runtime-main.js.map": "/guess-letter-game/static/js/runtime-main.4f514220.js.map",
+    "static/js/2.44aebe99.chunk.js": "/guess-letter-game/static/js/2.44aebe99.chunk.js",
+    "static/js/2.44aebe99.chunk.js.map": "/guess-letter-game/static/js/2.44aebe99.chunk.js.map",
+    "static/js/3.41d35014.chunk.js": "/guess-letter-game/static/js/3.41d35014.chunk.js",
+    "static/js/3.41d35014.chunk.js.map": "/guess-letter-game/static/js/3.41d35014.chunk.js.map",
+    "index.html": "/guess-letter-game/index.html",
+    "static/css/main.a727405a.chunk.css.map": "/guess-letter-game/static/css/main.a727405a.chunk.css.map",
+    "static/js/2.44aebe99.chunk.js.LICENSE.txt": "/guess-letter-game/static/js/2.44aebe99.chunk.js.LICENSE.txt",
+    "static/media/abc.png": "/guess-letter-game/static/media/abc.7788cefd.png",
+    "static/media/baloons.png": "/guess-letter-game/static/media/baloons.a93f4080.png",
+    "static/media/baloons_red.png": "/guess-letter-game/static/media/baloons_red.7d1b9e0d.png",
+    "static/media/bird.png": "/guess-letter-game/static/media/bird.5a7e090f.png",
+    "static/media/dog.png": "/guess-letter-game/static/media/dog.6b050d97.png",
+    "static/media/fox.png": "/guess-letter-game/static/media/fox.0eb0b6e0.png",
+    "static/media/heart.png": "/guess-letter-game/static/media/heart.a689bdd7.png",
+    "static/media/kids.png": "/guess-letter-game/static/media/kids.3f80a71a.png",
+    "static/media/letter.png": "/guess-letter-game/static/media/letter.48242503.png",
+    "static/media/puppy.png": "/guess-letter-game/static/media/puppy.d09225d2.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4f514220.js",
+    "static/js/2.44aebe99.chunk.js",
+    "static/css/main.a727405a.chunk.css",
+    "static/js/main.a1366019.chunk.js"
+  ]
+}

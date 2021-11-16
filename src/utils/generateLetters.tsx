@@ -10,7 +10,7 @@ function importAll(r: any) {
 
 // @ts-ignore
 export const rewardImages = importAll(
-  require.context("../assets/", false, /.png/)
+  require.context("../../src/assets", false, /.png/)
 );
 
 const alpha = Array.from(Array(26)).map((e, i) => i + 65);

@@ -10,5 +10,5 @@ function importAll(r: any) {
 
 // @ts-ignore
 export const soundsLitery = importAll(
-  require.context("../assets/sounds", false, /.mp3/)
+  require.context("../../src/assets/sounds", false, /.mp3/)
 );

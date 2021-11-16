@@ -1,21 +1,3 @@
-export const AppTextPL = {
-  choose_language: "Wybierz język",
-  next: "Graj dalej",
-  submit: "Sprawdź",
-  feedback_ok: "Świetnie!",
-  choose_find_letter: "Znajdź literę",
-  letter: "Litera",
-};
-
-export const AppTextEng = {
-  choose_language: "Choose Language",
-  choose_find_letter: "Find Letter",
-  next: "Next",
-  submit: "Submit",
-  feedback_ok: "Good Job!",
-  letter: "Letter",
-};
-
 export const AppText = {
   choose_language: "",
   choose_find_letter: "",
@@ -34,6 +16,8 @@ export const getTranslation = (lang: string) => {
       submit: "Submit",
       feedback_ok: "Good Job!",
       letter: "Letter",
+      points: "Points: ",
+      new_game: "New Game",
     };
   } else if (lang === "pl") {
     return {
@@ -43,6 +27,8 @@ export const getTranslation = (lang: string) => {
       feedback_ok: "Świetnie!",
       choose_find_letter: "Znajdź literę",
       letter: "Litera",
+      points: "Punkty: ",
+      new_game: "Nowa  Gra",
     };
   }
 
@@ -53,5 +39,7 @@ export const getTranslation = (lang: string) => {
     feedback_ok: "Świetnie!",
     choose_find_letter: "Znajdź litere",
     letter: "Litera",
+    points: "Punkty: ",
+    new_game: "Nowa  Gra",
   };
 };

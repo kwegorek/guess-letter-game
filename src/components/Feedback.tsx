@@ -1,25 +1,41 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback } from "react";
 
 const Feedback = ({
   translation,
+  divRef,
   handleClick,
   rewardPicture,
 }: {
   translation: any;
+  divRef: any;
   rewardPicture: any;
-  handleClick: (e: any) => any;
+  handleClick: () => any;
 }) => {
-  console.log(rewardPicture);
+  const onKeyPressed = (e: any) => {
+    console.log(e.key, "pressed");
+    handleClick();
+  };
+
+  const callbackRef = useCallback((inputElement) => {
+    console.log("e");
+    if (inputElement) {
+      console.log(inputElement);
+      inputElement.focus();
+    }
+  }, []);
+
   return (
-    <div className="Feedback">
-      <div className="imgContainer">
-        <img src={rewardPicture}></img>
-      </div>
+    <div
+      tabIndex={-1}
+      onKeyPress={onKeyPressed}
+      ref={callbackRef}
+      className="Feedback"
+    >
       <div>
         <h4>{translation.feedback_ok}</h4>
-        <button className="BtnSubmit" onClick={handleClick}>
-          {translation.next}
-        </button>
+      </div>
+      <div className="imgContainer">
+        <img src={rewardPicture}></img>
       </div>
     </div>
   );

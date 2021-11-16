@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { soundsLitery } from "../utils/generateLetterSounds";
 
 const FindLetter = ({
   currentLetter,
@@ -7,10 +8,26 @@ const FindLetter = ({
   currentLetter: string;
   translation: any;
 }) => {
+  let audioSrc = `litera_${currentLetter}.mp3`;
+
+  useEffect(() => {
+    if (currentLetter) {
+      new Audio(soundsLitery[audioSrc])
+        .play()
+        .then(() => {})
+
+        .catch((error: any) => {
+          console.log(error);
+        });
+    }
+    return () => {};
+  }, [currentLetter]);
   return (
     <div className="FindLetter">
-      <h3>{translation.choose_find_letter}</h3>
-      <h3>{currentLetter}</h3>
+      <h2 style={{ fontSize: "50px" }}>
+        {/* {translation.choose_find_letter} */}
+        {currentLetter}
+      </h2>
     </div>
   );
 };

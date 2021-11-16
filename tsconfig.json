@@ -18,7 +18,8 @@
     "types": [
       "node",
       "webpack-env" // here
-    ]
+    ],
+    "typeRoots": ["node_modules/@types", "custom_typings/"]
   },
   "include": ["src"]
 }
